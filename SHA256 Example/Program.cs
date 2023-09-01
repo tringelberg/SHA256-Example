@@ -15,7 +15,7 @@ internal class Program
             while (true)
             {
                 string? buffer;
-                Console.Write(">");
+                Console.Write("> ");
 
                 buffer = Console.ReadLine();
 
@@ -26,7 +26,7 @@ internal class Program
                 sw.Flush();
                 ms.Position = 0;
 
-                Console.WriteLine($"SHA256: {sha256.ComputeHash(ms)}");
+                Console.WriteLine($"{sha256.ComputeHash(ms)}");
             }
         }
     }
